@@ -1,0 +1,68 @@
+Full device name:        Intel(R) Core(TM) i3-2365M CPU @ 1.40GHz
+
+[ INFO ] Pefrormance counts for 3-th infer request:
+138                           NOT_RUN        layerType: Reshape            realTime: 0         cpu: 0               execType: unknown_FP32
+138___139                     EXECUTED       layerType: Reorder            realTime: 11        cpu: 11              execType: ref_any_FP32
+left_eye_image                NOT_RUN        layerType: Input              realTime: 0         cpu: 0               execType: unknown
+left_eye_image_U8_FP32_Add... EXECUTED       layerType: Reorder            realTime: 20        cpu: 20              execType: jit_uni_I8
+Add1_/Fused_Add_              EXECUTED       layerType: ScaleShift         realTime: 37        cpu: 37              execType: jit_sse42_FP32
+93                            EXECUTED       layerType: Convolution        realTime: 2100      cpu: 2100            execType: jit_sse42_FP32
+94                            NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2559/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+96                            EXECUTED       layerType: Convolution        realTime: 1545      cpu: 1545            execType: jit_avx2_FP32
+97                            EXECUTED       layerType: Convolution        realTime: 5263      cpu: 5263            execType: jit_sse42_FP32
+98                            NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2487/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+100                           EXECUTED       layerType: Convolution        realTime: 1368      cpu: 1368            execType: jit_avx2_FP32
+right_eye_image               NOT_RUN        layerType: Input              realTime: 0         cpu: 0               execType: unknown
+right_eye_image_U8_FP32_Ad... EXECUTED       layerType: Reorder            realTime: 26        cpu: 26              execType: jit_uni_I8
+Add1_2583/Fused_Add_          EXECUTED       layerType: ScaleShift         realTime: 37        cpu: 37              execType: jit_sse42_FP32
+102                           EXECUTED       layerType: Convolution        realTime: 2110      cpu: 2110            execType: jit_sse42_FP32
+103                           NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2571/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+105                           EXECUTED       layerType: Convolution        realTime: 1540      cpu: 1540            execType: jit_avx2_FP32
+106                           EXECUTED       layerType: Convolution        realTime: 5284      cpu: 5284            execType: jit_sse42_FP32
+107                           NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2535/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+109                           EXECUTED       layerType: Convolution        realTime: 1368      cpu: 1368            execType: jit_avx2_FP32
+110                           EXECUTED       layerType: Concat             realTime: 8         cpu: 8               execType: unknown_FP32
+111                           EXECUTED       layerType: Convolution        realTime: 10091     cpu: 10091           execType: jit_sse42_FP32
+112                           NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2523/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+114                           EXECUTED       layerType: Convolution        realTime: 1483      cpu: 1483            execType: jit_avx2_FP32
+115                           EXECUTED       layerType: Convolution        realTime: 2725      cpu: 2725            execType: jit_sse42_FP32
+116                           NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2547/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+118                           EXECUTED       layerType: Convolution        realTime: 327       cpu: 327             execType: jit_avx2_FP32
+119                           EXECUTED       layerType: Convolution        realTime: 652       cpu: 652             execType: jit_sse42_FP32
+120                           NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2511/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+122                           EXECUTED       layerType: Convolution        realTime: 1230      cpu: 1230            execType: jit_avx2_FP32
+122_nChw8c_nchw_130           EXECUTED       layerType: Reorder            realTime: 17        cpu: 17              execType: jit_uni_FP32
+130                           NOT_RUN        layerType: Reshape            realTime: 0         cpu: 0               execType: unknown_FP32
+130___139                     EXECUTED       layerType: Reorder            realTime: 12        cpu: 12              execType: ref_any_FP32
+139                           EXECUTED       layerType: Concat             realTime: 8         cpu: 8               execType: unknown_FP32
+140256                        NOT_RUN        layerType: Reshape            realTime: 0         cpu: 0               execType: unknown_FP32
+141252                        NOT_RUN        layerType: Reshape            realTime: 0         cpu: 0               execType: unknown_FP32
+141252_nchw_nChw8c_142/Fus... EXECUTED       layerType: Reorder            realTime: 21        cpu: 21              execType: ref_any_FP32
+142/Fused_Add_                EXECUTED       layerType: Convolution        realTime: 148       cpu: 148             execType: jit_avx2_1x1_FP32
+144                           NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+145                           EXECUTED       layerType: Convolution        realTime: 35        cpu: 35              execType: jit_sse42_1x1_FP32
+146                           NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2499/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+148                           EXECUTED       layerType: Convolution        realTime: 7         cpu: 7               execType: jit_avx2_1x1_FP32
+148_nChw8c_nchw_150           EXECUTED       layerType: Reorder            realTime: 11        cpu: 11              execType: ref_any_FP32
+150                           NOT_RUN        layerType: Reshape            realTime: 0         cpu: 0               execType: unknown_FP32
+gaze_vector                   NOT_RUN        layerType: Reshape            realTime: 0         cpu: 0               execType: unknown_FP32
+out_gaze_vector               NOT_RUN        layerType: Output             realTime: 0         cpu: 0               execType: unknown_FP32
+Total time: 37484    microseconds
+
+Full device name:        Intel(R) Core(TM) i3-2365M CPU @ 1.40GHz
+
+Count:      6384 iterations
+Duration:   60066.34 ms
+Latency:    38.59 ms
+Throughput: 106.28 FPS
+Peak Virtual Memory (VmPeak) Size, kBytes: 737484
+Peak Resident Memory (VmHWM) Size, kBytes:  96412
+

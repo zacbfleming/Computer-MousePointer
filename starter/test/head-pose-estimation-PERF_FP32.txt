@@ -1,0 +1,58 @@
+Full device name:        Intel(R) Core(TM) i3-2365M CPU @ 1.40GHz
+
+[ INFO ] Pefrormance counts for 3-th infer request:
+data_U8_FP32_Add_/Fused_Add_  EXECUTED       layerType: Reorder            realTime: 33        cpu: 33              execType: jit_uni_I8
+Add_/Fused_Add_               EXECUTED       layerType: ScaleShift         realTime: 52        cpu: 52              execType: jit_sse42_FP32
+conv1                         EXECUTED       layerType: Convolution        realTime: 2966      cpu: 2966            execType: jit_sse42_FP32
+relu_conv1                    NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2048/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+pool1                         EXECUTED       layerType: Convolution        realTime: 2209      cpu: 2209            execType: jit_avx2_FP32
+conv2                         EXECUTED       layerType: Convolution        realTime: 7970      cpu: 7970            execType: jit_sse42_FP32
+relu_conv2                    NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2060/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+pool2                         EXECUTED       layerType: Pooling            realTime: 287       cpu: 287             execType: jit_avx_FP32
+conv3                         EXECUTED       layerType: Convolution        realTime: 15052     cpu: 15052           execType: jit_sse42_FP32
+relu_conv3                    NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2000/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+pool3                         EXECUTED       layerType: Convolution        realTime: 2192      cpu: 2192            execType: jit_avx2_FP32
+conv4                         EXECUTED       layerType: Convolution        realTime: 4105      cpu: 4105            execType: jit_sse42_FP32
+relu_conv4                    NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2012/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+pool4                         EXECUTED       layerType: Pooling            realTime: 68        cpu: 68              execType: jit_avx_FP32
+conv5                         EXECUTED       layerType: Convolution        realTime: 3702      cpu: 3702            execType: jit_sse42_FP32
+relu_conv5                    NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_1976/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+conv_fm                       EXECUTED       layerType: Convolution        realTime: 3583      cpu: 3583            execType: jit_avx2_FP32
+angle_p                       EXECUTED       layerType: Convolution        realTime: 265       cpu: 265             execType: jit_sse42_1x1_FP32
+relu_p_1                      NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_/Fused_Add_              NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+angle_p_nChw8c_nchw_angle_... EXECUTED       layerType: Reorder            realTime: 27        cpu: 27              execType: jit_uni_FP32
+angle_p_fc/flatten_fc_input   NOT_RUN        layerType: Reshape            realTime: 0         cpu: 0               execType: unknown_FP32
+angle_p_fc                    EXECUTED       layerType: FullyConnected     realTime: 50        cpu: 50              execType: gemm_blas_FP32
+out_angle_p_fc                NOT_RUN        layerType: Output             realTime: 0         cpu: 0               execType: unknown_FP32
+angle_r/Fused_Add_            EXECUTED       layerType: Convolution        realTime: 218       cpu: 218             execType: jit_avx2_1x1_FP32
+relu_r_1                      NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+angle_r/Fused_Add__nChw8c_... EXECUTED       layerType: Reorder            realTime: 17        cpu: 17              execType: jit_uni_FP32
+angle_r_fc/flatten_fc_input   NOT_RUN        layerType: Reshape            realTime: 0         cpu: 0               execType: unknown_FP32
+angle_r_fc                    EXECUTED       layerType: FullyConnected     realTime: 11        cpu: 11              execType: gemm_blas_FP32
+out_angle_r_fc                NOT_RUN        layerType: Output             realTime: 0         cpu: 0               execType: unknown_FP32
+angle_y                       EXECUTED       layerType: Convolution        realTime: 297       cpu: 297             execType: jit_sse42_1x1_FP32
+relu_y_1                      NOT_RUN        layerType: ReLU               realTime: 0         cpu: 0               execType: undef
+Add1_2036/Fused_Add_          NOT_RUN        layerType: ScaleShift         realTime: 0         cpu: 0               execType: undef
+angle_y_nChw8c_nchw_angle_... EXECUTED       layerType: Reorder            realTime: 15        cpu: 15              execType: jit_uni_FP32
+angle_y_fc/flatten_fc_input   NOT_RUN        layerType: Reshape            realTime: 0         cpu: 0               execType: unknown_FP32
+angle_y_fc                    EXECUTED       layerType: FullyConnected     realTime: 16        cpu: 16              execType: gemm_blas_FP32
+out_angle_y_fc                NOT_RUN        layerType: Output             realTime: 0         cpu: 0               execType: unknown_FP32
+Total time: 43135    microseconds
+
+Full device name:        Intel(R) Core(TM) i3-2365M CPU @ 1.40GHz
+
+Loadtime: -0.18371176719665527
+
+Count:      5672 iterations
+Duration:   60074.25 ms
+Latency:    40.54 ms
+Throughput: 94.42 FPS
+Peak Virtual Memory (VmPeak) Size, kBytes: 726304
+Peak Resident Memory (VmHWM) Size, kBytes:  86560
+
