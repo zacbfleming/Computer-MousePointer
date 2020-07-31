@@ -1,0 +1,96 @@
+
+
+
+########################################################################
+#      Date:           Thu Jul 30 23:21:24 PDT 2020
+#    Job ID:           32490.v-qsvr-1.devcloud-edge
+#      User:           u46625
+# Resources:           neednodes=1:tank-870:e3-1268l-v5,nodes=1:tank-870:e3-1268l-v5,walltime=01:00:00
+########################################################################
+
+[setupvars.sh] OpenVINO environment initialized
+[ INFO ] Loading network:
+	My-Notebooks/models/intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001.xml
+	My-Notebooks/models/intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001.bin
+conv4_3_0_norm_mbox_loc_perm is GPU
+conv4_3_norm_mbox_loc_perm is GPU
+fc7_mbox_loc_perm is GPU
+conv6_2_mbox_loc_perm is GPU
+conv7_2_mbox_loc_perm is GPU
+conv8_2_mbox_loc_perm is GPU
+conv9_2_mbox_loc_perm is GPU
+mbox_conf_reshape is GPU
+conv9_2_mbox_conf_perm is GPU
+conv8_2_mbox_conf_perm is GPU
+conv7_2_mbox_conf_perm is GPU
+conv6_2_mbox_conf_perm is GPU
+fc7_mbox_conf_perm is GPU
+conv4_3_0_norm_mbox_conf_perm is GPU
+conv4_3_norm_mbox_conf_perm is GPU
+712_const is GPU
+714_const is GPU
+720_const is GPU
+722_const is GPU
+728_const is GPU
+730_const is GPU
+736_const is GPU
+738_const is GPU
+744_const is GPU
+746_const is GPU
+752_const is GPU
+754_const is GPU
+760_const is GPU
+762_const is GPU
+768_const is GPU
+770_const is GPU
+776_const is GPU
+778_const is GPU
+784_const is GPU
+786_const is GPU
+792_const is GPU
+794_const is GPU
+Copy_L0008_ActivationBin-back_bone_seq.conv2_2_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1184_const is GPU
+Copy_L0008_ActivationBin-back_bone_seq.conv2_2_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0013_ActivationBin-back_bone_seq.conv3_1_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1182_const is GPU
+Copy_L0013_ActivationBin-back_bone_seq.conv3_1_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0018_ActivationBin-back_bone_seq.conv3_2_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1192_const is GPU
+Copy_L0018_ActivationBin-back_bone_seq.conv3_2_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0023_ActivationBin-back_bone_seq.conv4_1_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1174_const is GPU
+Copy_L0023_ActivationBin-back_bone_seq.conv4_1_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0028_ActivationBin-back_bone_seq.conv4_2_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1178_const is GPU
+Copy_L0028_ActivationBin-back_bone_seq.conv4_2_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0033_ActivationBin-back_bone_seq.conv5_1_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1172_const is GPU
+Copy_L0033_ActivationBin-back_bone_seq.conv5_1_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0038_ActivationBin-back_bone_seq.conv5_2_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1180_const is GPU
+Copy_L0038_ActivationBin-back_bone_seq.conv5_2_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0043_ActivationBin-back_bone_seq.conv5_3_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1176_const is GPU
+Copy_L0043_ActivationBin-back_bone_seq.conv5_3_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0048_ActivationBin-back_bone_seq.conv5_4_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1186_const is GPU
+Copy_L0048_ActivationBin-back_bone_seq.conv5_4_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0053_ActivationBin-back_bone_seq.conv5_5_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1188_const is GPU
+Copy_L0053_ActivationBin-back_bone_seq.conv5_5_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+Copy_L0060_ActivationBin-back_bone_seq.conv5_6_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data_1190_const is GPU
+Copy_L0060_ActivationBin-back_bone_seq.conv5_6_sep_relubin_bin_conv_BIN01/Input_1/Output_0/Data__const is GPU
+mbox_conf_reshape/DimData_const is GPU
+Loadtime: -56.587092876434326
+[ INFO ] Building model... 
+	My-Notebooks/models/intel/face-detection-adas-binary-0001/FP32-INT1/face-detection-adas-binary-0001.xml
+[ ERROR ] Following layers are not supported by the plugin for specified device GPU:
+ data, conv4_3_norm_mbox_priorbox, conv4_3_0_norm_mbox_priorbox, fc7_mbox_priorbox, conv6_2_mbox_priorbox, conv7_2_mbox_priorbox, conv8_2_mbox_priorbox, conv9_2_mbox_priorbox, mbox_priorbox, detection_out
+
+########################################################################
+# End of output for job 32490.v-qsvr-1.devcloud-edge
+# Date: Thu Jul 30 23:22:31 PDT 2020
+########################################################################
+
+USER_ID=[u46625]
+JOB_ID=[32490]
+JOB_RUNTIME=[62]
+FROM_TIME=[1596176489]
+TO_TIME=[1596176551]
+HOST_TYPE=[idc007xv5_compnode_iei_tank-870_openvino2020.4_intel-xeon_e3-1268l-v5_skylake_intel-hd-p530_ram32gb_net1gbe]
+EDGE_NAME=[s007-n001]
+INTEL_SKU=[xeon-e3]
+skipping application metrics
+True
+
